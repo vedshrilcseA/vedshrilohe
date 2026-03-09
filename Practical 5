@@ -1,0 +1,48 @@
+<html>
+<title>Practical no.5</title>
+<h2 align="center">RESUME</h2>
+<h3>VEDSHRI RAVINDRA LOHE</h3>
+<h3>vedshril.cse25@sbjit.edu.in</h3>
+
+<br><hr>
+
+<body>
+
+<table border="4">
+<h4>QUALIFICATION</h4> 
+<tr>
+<th>BOARD</th>
+<th>CLASSES</th>
+<th>YEAR</th>
+<th>PERCENTAGE</th>
+</tr>
+<tr>
+<td>CBSE</td>
+<td>10th</td>
+<td>2022-2023</td>
+<td>92%</td>
+</tr>
+<tr>
+<td>STATE</td>
+<td>12th</td>
+<td>2024-2025</td>
+<td>81%</td>
+</tr>
+<td>RTML</td>
+<td>ENGINEERING</td>
+<td>2025-2029</td>
+<td>9.98CGPA</td>
+</tr> 
+</table>
+
+<p align="right">
+<h4 align="right">technical skills:</h4>
+<ul align="right">
+<li>C++</li>
+<li align="right">C</li>
+<li>Web-design</li>
+<li>Java</li>
+</ul>
+</p>
+</body>
+</html>
