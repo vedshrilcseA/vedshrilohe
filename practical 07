@@ -1,0 +1,86 @@
+<html>
+<head>
+<title>practical 07</title>
+<h4>vedshri lohe</h4>
+<h4>CS25057</h4>
+
+<style>
+body{
+    font-family: Arial;
+    background-color: green;
+    margin: 0;
+}
+
+header{
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav{
+    background-color: blue;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a{
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.container{
+    text-align: center;
+    padding: 30px;
+}
+
+img{
+    width: 220px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+p{
+    font-size: 18px;
+    width: 60%;
+    margin: auto;
+    color: grey;
+}
+
+footer{
+    background-color: purple;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>Tribute to Ratan Tata</h1>
+</header>
+<img src="ratantata.jpg">
+
+<h2>Ratan Tata</h2>
+
+<p>
+Ratan Tata is a famous Indian industrialist and former chairman of the Tata Group.
+He is known for his leadership, innovation, and contributions to the growth of
+Indian industries. Under his leadership, Tata Group expanded globally and
+launched successful projects like the Tata Nano and Tata Motors expansion.
+</p>
+
+</div>
+
+<footer>
+<p>Simple Tribute Page</p>
+</footer>
+
+</body>
+</html>
