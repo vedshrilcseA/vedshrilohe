@@ -1,0 +1,120 @@
+<html>
+<head>
+<title>Responsive Webpage</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<style>
+
+body{
+font-family: Arial;
+margin:0;
+}
+
+
+header{
+background-color:skyblue;
+text-align:center;
+padding:20px;
+}
+
+
+.row{
+display:flex;
+flex-wrap:wrap;
+}
+
+.column{
+flex:33%;
+padding:20px;
+text-align:center;
+}
+
+
+.box{
+background-color:lightgray;
+padding:20px;
+transition:0.5s;
+}
+
+
+.box:hover{
+transform:scale(1.1);
+}
+
+
+.icon{
+font-size:40px;
+animation:move 2s infinite;
+}
+
+@keyframes move{
+0%{color:red;}
+50%{color:blue;}
+100%{color:green;}
+}
+
+
+@media (max-width:600px){
+.column{
+flex:100%;
+}
+}
+
+footer{
+background-color:skyblue;
+text-align:center;
+padding:10px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>Responsive Webpage</h1>
+<p>Using CSS3 Features</p>
+</header>
+
+<div class="row">
+
+<div class="column">
+<div class="box">
+<i class="fas fa-laptop icon"></i>
+<h3>Laptop</h3>
+<p>A laptop is a portable computer that is easy to carry anywhere. It runs on battery or electricity and is used for studying, working, browsing the internet, and entertainment. It has a screen, keyboard, and touchpad in one device. 💻</p>
+</div>
+</div>
+
+<div class="column">
+<div class="box">
+<i class="fas fa-mobile icon"></i>
+<h3>Mobile</h3>
+<p>Mobiles have become an essential part of our lives, offering a range of features like communication, internet browsing, entertainment, and productivity tools. They're compact, portable, and provide instant access to information and services. With advancements in technology, mobiles now have high-quality cameras, AI capabilities, and sleek designs, making them a must-have device for many. 📱</p>
+</div>
+</div>
+
+<div class="column">
+<div class="box">
+<i class="fas fa-cloud icon"></i>
+<h3>Cloud</h3>
+<p>Cloud computing delivers computing services like servers, storage, and apps over the internet, offering flexibility, scalability, and cost savings. You access data anywhere, and services like AWS, Google Drive, and Azure handle the tech behind the scenes 🌟</p>
+</div>
+</div>
+
+</div>
+
+<footer>
+<p>Simple Responsive Webpage</p>
+<h3 align="center">Vedshri lohe</h3>
+<h3 align="center">CS25057</h3>
+
+</footer>
+
+</body>
+</html>
