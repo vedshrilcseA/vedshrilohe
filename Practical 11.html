@@ -1,0 +1,131 @@
+<html>
+<head>
+<title>Beginner Web Features</title>
+
+<style>
+
+body{
+font-family: Arial;
+background-color: lightyellow;
+text-align: center;
+}
+
+.box{
+width:200px;
+height:200px;
+border:2px dashed black;
+margin:20px auto;
+padding:10px;
+background-color:white;
+border-radius:15px;
+}
+
+.drag{
+width:150px;
+padding:10px;
+background-color:lightpink;
+margin:auto;
+cursor:grab;
+border-radius:10px;
+}
+
+button{
+padding:10px 20px;
+margin:10px;
+background-color:lightblue;
+border:none;
+border-radius:10px;
+}
+
+</style>
+
+<script>
+
+
+function allowDrop(event){
+event.preventDefault();
+}
+
+function drag(event){
+event.dataTransfer.setData("text", event.target.id);
+}
+
+function drop(event){
+event.preventDefault();
+var data = event.dataTransfer.getData("text");
+event.target.appendChild(document.getElementById(data));
+}
+
+
+
+function getLocation(){
+if(navigator.geolocation){
+navigator.geolocation.getCurrentPosition(showPosition);
+}else{
+document.getElementById("location").innerHTML="Geolocation not supported";
+}
+}
+
+function showPosition(position){
+document.getElementById("location").innerHTML =
+"Latitude: " + position.coords.latitude +
+"<br>Longitude: " + position.coords.longitude;
+}
+
+
+function saveName(){
+var name = document.getElementById("name").value;
+localStorage.setItem("username", name);
+alert("Name Saved!");
+}
+
+function showName(){
+var user = localStorage.getItem("username");
+document.getElementById("result").innerHTML = "Hello " + user;
+}
+
+</script>
+
+</head>
+
+<body>
+
+<h1>Fun Web Features App</h1>
+
+<hr>
+
+<h2>Drag and Drop</h2>
+
+<div class="drag" draggable="true" ondragstart="drag(event)" id="drag1">
+Drag Me
+</div>
+
+<div class="box" ondrop="drop(event)" ondragover="allowDrop(event)">
+Drop Here
+</div>
+
+
+<hr>
+
+<h2>Geolocation</h2>
+
+<button onclick="getLocation()">Get My Location</button>
+
+<p id="location"></p>
+
+<hr>
+
+<h2>Web Storage</h2>
+
+<input type="text" id="name" placeholder="Enter your name">
+
+<br>
+
+<button onclick="saveName()">Save Name</button>
+
+<button onclick="showName()">Show Name</button>
+
+<p id="result"></p>
+
+</body>
+</html>
